@@ -1,0 +1,4 @@
+<% if  ! @grubchanged.to_s.empty? && ! @grubhash.to_s.empty? -%>
+/usr/bin/cp   -p  /boot/grub2/grub.cfg   /boot/grub2/grub.cfg.backup-<%= @grubchanged %>
+/usr/bin/sed  -i '/united/d' /boot/grub2/grub.cfg 
+<% end -%>

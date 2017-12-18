@@ -1,0 +1,14 @@
+{
+  "name": "wfrench-osconfig_password_mgmt",
+  "version": "0.0.5",
+  "author": "mas",
+  "summary": "This module manages the automated update of the local Linux System accounts (for root and sysadm), the GRUB password (for RHEL6 machines) and the GRUB2 password (for RHEL7 machines) consistently across Satellite Host Groups.",
+  "license": "Apache 2.0",
+  "source": "gitlab-tst.aws.iams.org/mas/osconfig_password_mgmt.git",
+  "project_page": "gitlab-tst.aws.iams.org/mas/osconfig_password_mgmt",
+  "issues_url": "gitlab-tst.aws.iams.org/mas/osconfig_password_mgmt/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+

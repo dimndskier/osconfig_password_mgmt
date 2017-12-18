@@ -1,0 +1,7 @@
+# This file managed by puppet module: osconfig_password_mgmt
+# DO NOT ALTER outside of the Puppet Framework.
+#
+#
+<% if  ! @grubchanged.to_s.empty? && ! @grubhash.to_s.empty? -%>
+GRUB2_PASSWORD=<%= @grubhash %>
+<% end -%>

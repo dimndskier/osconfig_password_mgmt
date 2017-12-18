@@ -1,0 +1,4 @@
+<% if  ! @grubchanged.to_s.empty? && ! @grubhash.to_s.empty? -%>
+/bin/cp   -p  /boot/grub/grub.conf  /boot/grub/grub.conf.backup-<%= @grubchanged %>
+/bin/sed  -i  '/password --encrypted/cpassword --encrypted <%= @grubhash %>'    /boot/grub/grub.conf
+<% end -%>
